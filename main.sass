@@ -1,0 +1,84 @@
+$primary-color: #000000
+$secondary-color: #F2F2F2
+
+$display-size: 100vh
+
+html body
+    height: 100%
+    margin: 0
+
+.container
+    height: $display-size
+
+$header-size: 8vh
+
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: $header-size
+
+div.logo
+    display: flex
+    margin: 1em 0 0 1em
+    span
+        display: flex
+        align-items: center
+        font-weight: bold
+
+nav
+    display: flex
+    align-items: center
+    margin: 1em 5em 0 0
+    ul
+        display: flex
+        list-style: none
+        li
+            margin: 0 3em
+            a
+                text-decoration: none
+                color: $primary-color
+                font-size: 1.2rem
+                font-weight: 600
+                &:hover
+                    color: $secondary-color
+
+div.body-container
+    display: flex
+    align-items: center
+    height: $display-size - 2*$header-size
+    div
+        width: 50%
+        display: flex
+        justify-content: center
+        span 
+            height: 2em
+            font-weight: bold
+            margin: 0 1em
+
+div#LP-left
+    span
+        font-size: 1.5em
+        letter-spacing: 0.1em
+        color: $primary-color
+
+footer
+    div
+        a
+            margin: 0 1em
+
+#copyright
+    span
+        font-size: 0.7em
+    
+svg.icon
+    width: 48px
+    height: 48px
+    margin: 0 0
+svg#LP-icon
+    width: 430px
+    height: 430px
+    circle
+        fill: $secondary-color
+    path
+        fill: $secondary-color
